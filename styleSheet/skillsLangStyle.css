@@ -1,0 +1,324 @@
+:root {
+    --selection-bg-color: bisque;
+    --selection-font-color: #060a23;
+}
+
+* {
+    color:aliceblue;
+    font-family: 'Caveat', cursive;
+    
+}
+
+*::selection {
+    background-color: var(--selection-bg-color);
+    color: var(--selection-font-color);
+}
+
+/* degug overflow */
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    background-image: url("/img/phone_320/bgImg.jpg");
+    background-size:cover;
+}
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#topSection {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+}
+
+#topSection header {
+    /* display: inline-block; */
+    flex-basis: 15%;
+    text-align: center;
+    /* flex-grow: 1; */
+}
+
+#topSection nav {
+    flex-basis: 85%;
+}
+
+#navUl {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+#navUl li {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#leftMain {
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: column;
+    justify-content: flex-start;    
+    overflow-x: hidden;
+}
+
+/* .header {    
+    margin-left: 10%;
+    text-align: start;
+    font-size: 150%;
+}
+
+.header h1{    
+    margin-top: 0;
+} */
+
+#headers {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 10%; */
+    text-align: start;
+    font-size: 150%;
+}
+
+#headers h1 {
+    
+    margin-top: 0;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+}
+
+#headers h1:nth-of-type(1) {
+    padding-left: 5%;
+    flex-basis: 70%;
+}
+
+#headers h1:nth-of-type(2) {
+    flex-basis: 30%;
+}
+
+/* #leftMainContent li::selection {
+    background-color: bisque;
+    color: #060a23;
+} */
+
+/* #currPage {
+    margin-top: 0;
+    font-size: 250%;
+    margin-left: 10%;
+    animation-duration: 2s;
+    animation-name: slidein;
+} */
+
+#rightMain {
+    flex-basis: 30%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.project {
+    transition: 0.3s;
+}
+
+.project:hover {
+    width:auto;
+    height: auto;
+    background-color: aliceblue;
+    padding: 1%;    
+    color:blue;
+}
+
+/* #downloadResume {
+    display: inline-block;
+    width: 12ch;
+    height: 7ex;
+    text-align: center;
+    color:blue;
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+
+#downloadResume:hover{
+    background-color: aqua;
+    color: darkblue;
+    border-radius: 50%;
+} */
+
+.heading {
+    font-weight:bold;
+    font-size: 1.5rem;
+    color: blanchedalmond;
+}
+
+.contentLi {
+    margin-bottom: 3%;
+    font-size: 1.2rem;
+}
+
+#footerSection1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#footerSection1 h1 {
+    flex-basis: 30%;
+    padding-left: 2vw;
+}
+
+
+#footerSection2 {
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: row;
+    justify-content: space-around;    
+    align-items: center;
+    
+}
+
+#footerMedia {
+    /* flex-basis: 70%; */
+    text-align: end;
+}
+
+.mediaImg {
+    width: 25px;
+    height: 25px;
+}
+
+@media (min-width: 320px) {
+    body {
+        background-image: url("/img/phone_320/bgImg.jpg");
+        background-size:cover;
+    }
+}
+
+@media (min-width: 375px) {
+    body {
+        background-image: url("/img/phone_375/bgImg.jpg");
+        background-size:cover;
+    }
+}
+
+@media (min-width: 481px) {
+    body {
+        background-image: url("/img/tablet_481/bgImg.jpg");
+        background-size:cover;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url("/img/tablet_768/bgImg.jpg");
+        background-size:cover;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-image: url("/img/laptop_1025/bgImg.jpg");
+        background-size:cover;
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        background-image: url("/img/desktop_1280/bgImg.jpg");
+        background-size:cover;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        background-image: url("/img/desktop_1920/");
+        background-size:cover;
+    }
+}
+
+@media (max-width: 490px) {
+    #topSection header {
+        display: none;
+    }
+
+    #footerMedia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footerSection1 h1 {
+        display: none;
+    }
+
+    #footerSection2 {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: row;
+        justify-content: space-between;    
+        align-items: center;
+        
+    }
+
+    #navUl {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+}

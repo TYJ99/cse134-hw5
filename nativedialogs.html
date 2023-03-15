@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dialogs</title>
+</head>
+<body>
+    <h1>Simple Dialogs?</h1>
+    <button id="alert">Alert</button>
+    <button id="confirm">Confirm</button>
+    <button id="prompt">Prompt</button>
+    <button id="saferPrompt">Safer Prompt</button>
+    <hr>
+    <output id="result"></output>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js"></script>
+    <script>
+        const result = document.querySelector("#result");
+        function createResult(text, resultText) {
+            result.style.display = "block";
+            result.classList.add("styleResult");
+            result.innerHTML = text + " result: " + resultText;
+            result.style.border = "thick double black";
+            result.style.padding = "10px";
+            result.style.height = "auto";
+            result.style.width = "fit-content";
+            // result.style.fontWeight = "bold";
+        }
+
+        function removeResult() {
+            result.style.display = "none";            
+        }
+
+        function triggerAlert() {
+            if(result.style.display === "block") {
+                removeResult();
+            }
+            setTimeout("alert('Alert pressed!!')", 100);
+            
+        }
+
+        function createConfirm() {
+            const isConfirmed = confirm("Do you confirm this?");
+            // setTimeout('createResult("Confirm", isConfirmed)', 600);
+            createResult("Confirm", isConfirmed);
+        }
+
+        function triggerConfirm() {
+            removeResult();
+            setTimeout("createConfirm()", 100);
+        }
+
+        function createPrompt() {
+            let res = prompt("What is your name?", "");
+            if (res === null) {
+                res = "User didn't enter anything";
+            }
+            createResult("Prompt", res);
+        }
+
+        function triggerPrompt() {
+            removeResult();
+            setTimeout("createPrompt()", 100);
+        }
+
+        function createSaferPrompt() {
+            let res = DOMPurify.sanitize(prompt("What is your name?", ""));
+            if (res === null) {
+                res = DOMPurify.sanitize("User didn't enter anything");
+            }
+            createResult("Safer Prompt", res);
+        }
+
+        function triggerSaferPrompt() {
+            removeResult();
+            setTimeout("createSaferPrompt()", 100);
+        }
+
+
+        const alertBtn = document.querySelector("#alert");
+        const confirmBtn = document.querySelector("#confirm");
+        const promptBtn = document.querySelector("#prompt");
+        const saferPromptBtn = document.querySelector("#saferPrompt");
+
+        alertBtn.addEventListener("click", triggerAlert);
+        confirmBtn.addEventListener("click", triggerConfirm);
+        promptBtn.addEventListener("click", triggerPrompt);
+        saferPromptBtn.addEventListener("click", triggerSaferPrompt);
+    </script>
+
+</body>
+</html>

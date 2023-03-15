@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yen-Ju Tseng's Website - contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styleSheet/reset.css"> -->
+    
+    <link rel="stylesheet" href="styleSheet/contactStyle.css">
+</head>
+<body>
+    <section id="topSection">
+        <header>
+            <h1>Yen-Ju Tseng</h1>
+        </header>
+        
+        <nav>
+            <ul id="navUl">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./eduProj.html">Education&Projects</a></li>
+                <li><a href="./skillsLang.html">Skills&Languages</a></li>
+                <li><a href="./resumeCV.html">Resume/CV</a></li>
+                <li><a href="./contact.html aria-current="page"">Contact</a></li>
+                <!-- <li><a href="./testTag.html">TestTag</a></li> -->
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <section id="leftMain">
+            <header>
+                <h2 id="currPage">Contact</h2>
+            </header>
+
+            <form action="#" id="leftMainContent">
+                <p>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </p>
+                <p>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </p>
+                <p>
+                    <label for="phone">Phone: </label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number">
+                </p>
+                <p>
+                    <!-- <label for="message">Leave your message: </label> -->
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave Your Message"></textarea>
+                </p>
+                <button>Send</button>
+            
+            </form>
+
+        </section>
+
+        <section id="rightMain">
+            <section id="rightMainSection1">
+                <header>
+                    <picture id="profilePhoto">
+                        <source media="(min-width: 320px)" srcset="/img/phone_320/profilePhoto2.png"/>
+                        <source media="(min-width: 375px)" srcset="/img/phone_375/profilePhoto2.png"/>
+                        <source media="(min-width: 481px)" srcset="/img/tablet_481/profilePhoto2.png"/>
+                        <source media="(min-width: 768px)" srcset="/img/tablet_768/profilePhoto2.png"/>
+                        <source media="(min-width: 1025px)" srcset="/img/laptop_1025/profilePhoto2.png"/>
+                        <source media="(min-width: 1280px)" srcset="/img/desktop_1280/profilePhoto2.png"/>
+                        <source media="(min-width: 1920px)" srcset="/img/desktop_1920/profilePhoto2.png"/>
+                        <img src="/img/phone_320/profilePhoto2.png" alt="profile photo">
+                    </picture>
+                    <h1>YEN-JU TSENG</h1>
+                </header>
+                <p>
+                    MS in <i>Electrical and Computer Engineering</i> @ UCSD<br>
+                    San Diego, California
+                </p>
+            </section>
+
+            <section id="rightMainSection2">
+                <p>Email: ytseng@ucsd.edu</p>
+                
+                <p id="media">
+                    <a href="https://www.linkedin.com/in/yenjutseng/">
+                        <picture>
+                            <source srcset="/img/25x25/linkedInLogo.png"/>
+                            <img src="img/25x25/linkedInLogo.png" alt="linkedin logo" class="mediaImg">
+                        </picture>
+                    </a>
+                
+            
+                    <a href="https://www.instagram.com/tyj.99/">
+                        <picture>
+                            <source srcset="/img/25x25/instagramLogo.png"/>
+                            <img src="img/25x25/instagramLogo.png" alt="instagram logo" class="mediaImg">
+                        </picture>
+                    </a>
+                
+                
+                    <a href="https://www.facebook.com/andy.tseng.3551">
+                        <picture>
+                            <source srcset="/img/25x25/facebookLogo.png"/>
+                            <img src="img/25x25/facebookLogo.png" alt="facebook logo" class="mediaImg">
+                        </picture>
+                    </a>
+                </p>
+
+                <a href="/resumeCV/Yen-Ju Tseng Resume.pdf" download id="downloadResume">Download<br>Resume</a>
+            </section>
+
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

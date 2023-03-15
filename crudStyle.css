@@ -1,0 +1,15 @@
+.deleteBtn {
+    width: 25px;
+    height: 25px;
+    background-image: url('img/trashIcon.png');
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.editBtn {
+    width: 25px;
+    height: 25px;
+    background-image: url('img/pencilIcon.png');
+    background-size: cover;
+    margin-left: 10px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yen-Ju Tseng's Website</title>
+    <style>
+        
+    </style>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Yen-Ju Tseng</h1>            
+        </header>
+        <p>
+            I'M<br>
+            YEN-JU<br>
+            TSENG.
+        </p>
+        <p>
+            MS in <i>Electrical and Computer Engineering</i> @ UCSD<br>
+            San Diego, California
+        </p>
+        
+        <h2>Test Tag</h2>
+        <nav aria-label="main">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html" aria-current="page">About</a></li>
+                <li><a href="./eduProj.html">Education&Projects</a></li>
+                <li><a href="./skillsLang.html">Skills&Languages</a></li>
+                <li><a href="./resumeCV.html">Resume/CV</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./testTag.html" aria-current="page">TestTag</a></li>
+            </ul>
+        </nav>
+
+        <pre>
+                    <code>
+                    class test
+                    {
+                        public static void main(String args[])
+                        {
+                            System.out.println("Hello, World");
+                        }
+                    }
+                    </code>
+                 </pre>  
+        
+        <iframe src="https://ucsd.edu/" frameborder="0"></iframe>
+        <figure>
+            <figcaption>Listen !!!!</figcaption>
+            <audio
+                controls
+                src="/audio/forest.wav">                    
+            </audio>
+        </figure>
+
+        <ol>
+            <li>apple</li>
+            <li>banana</li>
+        </ol>
+
+        <div>
+            <label for="agegroup">Select Age Group</label>
+            <select name="agegroup" id="agegroup">
+                <option value="">--Select Age Group--</option>
+                <optgroup label="Teenagers"></optgroup>
+                <option value="under18">Under 18</option>
+                <optgroup label="Adults"></optgroup>
+                <optoin value="19-30">19-30</optoin>
+                <option value="31-50">31-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+
+        <h3>Watch Video!!!!</h3>
+        <video controls width="250">
+            <source src="/video/short_video.mp4" width="60%">
+            <b>Not Supported!!</b>
+        </video>                
+
+        <h3>form with fieldset and legend</h3>
+        <form action="#">
+            <fieldset>
+              <legend>CSE134B is a great course?</legend>
+              <input type="radio" id="agree" name="question" value="agree" />
+              <label for="agree">I agree</label>
+              <input type="radio" id="disagree" name="question" value="disagree" />
+              <label for="disagree">I disagree</label>
+            </fieldset>
+            <fieldset>
+                <legend>CSE224 is a great course?</legend>
+                <input type="radio" id="agree" name="question2" value="agree" />
+                <label for="agree">I agree</label>
+                <input type="radio" id="disagree" name="question2" value="disagree" />
+                <label for="disagree">I disagree</label>
+            </fieldset>
+          </form>
+        
+        <h3>Details!!</h3>
+        <details>
+            <summary>Details: You don't want to see it!!</summary>
+            Got You!!
+        </details>
+
+        <h3>DataList!!</h3>
+        <label for="water-temp">Choose a flavor:</label>
+        <input list="water-temp-choice" id="water-temp" name="water-temp">
+        <datalist id="water-temp-choice">
+            <option value="Ice Cold">
+            <option value="Warm">
+            <option value="Hot">
+        </datalist>
+
+        <h3>Template!</h3>
+        <template>
+            <p>
+                I am Template!!
+            </p>
+        </template>
+
+        <h3>Canvas!!!</h3>
+        <canvas id="myCanvas" width="200" height="100"
+            style="border:1px solid #000000;">
+        </canvas>
+
+        <h3>SVG!!</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+        </svg>
+        
+        
+        
+        
+    </main>
+    
+    <hr>
+    <footer>
+        <h3>Contact</h3>
+        <section>
+            Email: ytseng@ucsd.edu <br>
+            LinkedIn: <a href="https://www.linkedin.com/in/yenjutseng/">LinkedIn Link</a>
+        </section>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+    <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yen-Ju Tseng's Website - about</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styleSheet/reset.css"> -->
+    
+    <link rel="stylesheet" href="styleSheet/aboutStyle.css">
+</head>
+<body>
+    <section id="topSection">
+        <header>
+            <h1>Yen-Ju Tseng</h1>
+        </header>
+        
+        <nav>
+            <ul id="navUl">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html aria-current="page"">About</a></li>
+                <li><a href="./eduProj.html">Education&Projects</a></li>
+                <li><a href="./skillsLang.html">Skills&Languages</a></li>
+                <li><a href="./resumeCV.html">Resume/CV</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <!-- <li><a href="./testTag.html">TestTag</a></li> -->
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <section id="leftMain">
+            <header>
+                <h2 id="currPage">About</h2>
+            </header>
+            <p id="leftMainContent">
+                Hi, I am Yen-Ju Tseng. I'm currently pursuing master degree at UCSD ECE. I am looking for a full-time job in the field of <strong>SDE</strong>.
+                I have some experience in <strong>C/C++</strong> and <strong>java</strong>. I built an <strong>Non-compressing Archival Storage System</strong> in C++ that implement 6 major actions
+                that the Archive system supports: add, extract, remove(permanently), list, performing a diagnostic dump of all the blocks in the file, 
+                and compact(remove empty blocks from Archive). Moreover, apply Observer Pattern to the Archive to register one or more "observers" of the Archive.
+                Observers will be notified when the Archive performs an action(add, extract, etc.). Based on the experience of making Archive storage system, 
+                I designed and built <strong>a working database like MySQL using C++17</strong>. For more details on projects section.   
+                Happy to connect and thanks.
+            </p>
+        </section>
+
+        <section id="rightMain">
+            <header>
+                <picture id="profilePhoto">
+                    <source media="(min-width: 320px)" srcset="/img/phone_320/profilePhoto2.png"/>
+                    <source media="(min-width: 375px)" srcset="/img/phone_375/profilePhoto2.png"/>
+                    <source media="(min-width: 481px)" srcset="/img/tablet_481/profilePhoto2.png"/>
+                    <source media="(min-width: 768px)" srcset="/img/tablet_768/profilePhoto2.png"/>
+                    <source media="(min-width: 1025px)" srcset="/img/laptop_1025/profilePhoto2.png"/>
+                    <source media="(min-width: 1280px)" srcset="/img/desktop_1280/profilePhoto2.png"/>
+                    <source media="(min-width: 1920px)" srcset="/img/desktop_1920/profilePhoto2.png"/>
+                    <img src="/img/phone_320/profilePhoto2.png" alt="profile photo">
+                </picture>
+                <h1>YEN-JU TSENG</h1>
+            </header>
+            <p>
+                MS in <i>Electrical and Computer Engineering</i> @ UCSD<br>
+                San Diego, California
+            </p>
+            <a href="/resumeCV/Yen-Ju Tseng Resume.pdf" download id="downloadResume">Download<br>Resume</a>
+            
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <section id="footerSection1">
+            <h1>Contact</h1>
+            <section id="footerSection2">
+                <p>Email: ytseng@ucsd.edu</p>
+                
+                <p id="footerMedia">
+                    <a href="https://www.linkedin.com/in/yenjutseng/">
+                        <picture>
+                            <source srcset="/img/25x25/linkedInLogo.png"/>
+                            <img src="img/25x25/linkedInLogo.png" alt="linkedin logo" class="mediaImg">
+                        </picture>
+                    </a>
+                
+            
+                    <a href="https://www.instagram.com/tyj.99/">
+                        <picture>
+                            <source srcset="/img/25x25/instagramLogo.png"/>
+                            <img src="img/25x25/instagramLogo.png" alt="instagram logo" class="mediaImg">
+                        </picture>
+                    </a>
+                
+                
+                    <a href="https://www.facebook.com/andy.tseng.3551">
+                        <picture>
+                            <source srcset="/img/25x25/facebookLogo.png"/>
+                            <img src="img/25x25/facebookLogo.png" alt="facebook logo" class="mediaImg">
+                        </picture>
+                    </a>
+                </p>
+            </section>
+        </section>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

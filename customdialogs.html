@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dialogs</title>
+</head>
+<body>
+    <dialog id="alertDialog">  
+        <p>Alert pressed!</p>        
+        <button id="alertOk">Ok</button>  
+    </dialog>
+    <dialog id="confirmDialog">  
+        <p>Do you confirm this?</p>       
+        <button id="confirmCancel">Cancel</button>  
+        <button id="confirmOk">Ok</button> 
+    </dialog>
+    <dialog id="saferPromptDialog">  
+        <label id="nameLabel" for="name">What is your name?</label>
+        <br>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <button id="saferPromptCancel">Cancel</button>  
+        <button id="saferPromptOk">Ok</button>  
+    </dialog>
+    <h1>Custom Dialogs with Dialog Tag in HTML5</h1>
+    <button id="alert">Alert</button>
+    <button id="confirm">Confirm</button>
+    <button id="saferPrompt">Prompt</button>
+    <hr>
+    <output id="result"></output>
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js"></script>
+    <script src="customdialog.js"></script>
+</body>
+</html>

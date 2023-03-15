@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+</head>
+<body>
+    <dialog id="addPostDialog">  
+        <label for="title">title:</label>
+        <input type="text" name="title" id="title">
+        <br>
+        <label for="date">date:</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="summary">summary:</label>
+        <br>
+        <textarea id="summary" name="summary" cols="40" rows="5"></textarea>
+        <button id="addPostCancelBtn">Cancel</button>  
+        <button id="addPostOkBtn">Ok</button>  
+    </dialog>    
+    <dialog id="deletePostDialog">  
+        <p>Delete post?</p>
+        <button id="deletePostNoBtn">No</button>  
+        <button id="deletePostYesBtn">Yes</button>  
+    </dialog>
+    <h1>Blog Posts</h1>
+    <p class="noPost" style="display: none;">
+        No posts currently listed
+        <button class="addPostBtn noPost">Add Post</button>
+
+    </p>
+    <ul id="listOfPosts" class="hasPost" style="display: none;">
+
+    </ul>
+    <button class="addPostBtn hasPost" style="display: none;">Add Post</button>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
