@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP with JavaScript</title>
+</head>
+<body>
+    <h1>HTTP with JavaScript</h1>
+    <form id="form">
+        <p>
+            <label for="id">id:</label>
+            <input type="number" name="id" id="id">
+        </p>
+        <p>
+            <label for="article_name">article name:</label>
+            <input type="text" name="article_name" id="article_name">
+        </p>
+        <p>
+            <p><label for="article_body">article body:</label></p>
+            <textarea name="article_body" id="article_body" cols="30" rows="10"></textarea>
+        </p>
+        <p>            
+            <input type="hidden" name="date" id="date">
+        </p>
+        
+    </form>
+    <output id="response">
+        
+    </output>    
+    <template id="outputTemplate">
+        <h3></h3>
+        <ul>
+            <li>article id: <span id="outputID"></span></li>
+            <li>article name: <span id="outputArticleName"></span></li>
+            <li>article body: <span id="outputArticleBody"></span></li>
+            <li>article create date: <span id="outputArticleDate"></span></li>
+        </ul>
+    </template>
+
+    <button id="postBtn">postBtn</button>
+    <button id="getBtn">getBtn</button>
+    <button id="putBtn">putBtn</button>
+    <button id="deleteBtn">deleteBtn</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js"></script>
+    <script src="methodtest.js"></script>
+</body>
+</html>
