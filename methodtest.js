@@ -60,6 +60,7 @@ async function handlePost() {
 }
 
 async function handleGet() {
+    outputResponse.innerHTML = "";
     const options = {
         method: "get",
         headers: {
@@ -133,7 +134,8 @@ async function handlePut() {
     
 }
 
-async function handleDelete() {         
+async function handleDelete() {  
+    outputResponse.innerHTML = "";       
     const options = {
         method: "delete",
     };
