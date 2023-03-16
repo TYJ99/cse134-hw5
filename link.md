@@ -1,9 +1,5 @@
-https://regal-caramel-42684f.netlify.app/nativedialogs.html
+part1: https://lively-panda-dcef0e.netlify.app/methodtest.html
 
-https://regal-caramel-42684f.netlify.app/customdialogs.html
+part2: https://lively-panda-dcef0e.netlify.app/webcomponent.html
 
-https://regal-caramel-42684f.netlify.app/crud.html
-
-https://regal-caramel-42684f.netlify.app/styledcrud.html
-
-https://github.com/TYJ99/cse134-hw4
+github: https://github.com/TYJ99/cse134-hw5
